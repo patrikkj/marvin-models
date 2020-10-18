@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow_io import experimental as tfex
 
 
-def to_tensor(path, pad=True):
+def to_tensor(path, pad=True, pad_length=16_000):
     # Create AudioTensor, normalized to (-1, 1)
     raw_audio = tf.io.read_file(path)
     tensor, sample_rate = tf.audio.decode_wav(raw_audio)
@@ -14,8 +14,11 @@ def to_tensor(path, pad=True):
     # Trim edges and zero-pad
     if pad:
         start, stop = tfex.audio.trim(tensor, axis=0, epsilon=0.005)
-        tensor = tensor[:stop]
-        tensor = tf.pad(tensor, tf.constant([[16_000 - tensor.shape[0], 0]]))
+        tensor = tensor[start:stop]
+        if tensor.shape[0] > pad_length:
+            print("ERROR: Tensor {tensor} is longer than pad_length, will be cropped.")
+            tensor = tensor[:pad_length]
+        tensor = tf.pad(tensor, tf.constant([[pad_length - tensor.shape[0], 0]]))
     return tensor
 
 
@@ -75,5 +78,5 @@ def batch_to_log_mel_spec(batch):
 def batch_log_mel_spec_to_mfccs(batch):
     # Compute MFCCs from log_mel_spectrograms and take the first 13.
     mfccs = tf.signal.mfccs_from_log_mel_spectrograms(
-        batch)[..., :13]
+        batch)[..., :30]
     return mfccs
