@@ -129,8 +129,66 @@ class LogMelSpectrogram(tf.keras.layers.Layer):
         super().__init__(**kwargs)
 
     def call(self, mel_spectrograms):
-        # Compute a stabilized log to get log-magnitude mel-scale spectrograms.
         return tf.math.log(mel_spectrograms + 1e-6)
 
     def get_config(self):
         return super().get_config().copy()
+
+
+class DbMelSpectrogram(tf.keras.layers.Layer):
+    def __init__(self, params, hparams, **kwargs):
+        super().__init__(**kwargs)
+
+    def call(self, mel_spectrograms):
+        return tfio.experimental.audio.dbscale(mel_spectrograms, 80)
+
+    def get_config(self):
+        return super().get_config().copy()
+
+
+class MFCC(tf.keras.layers.Layer):
+    def __init__(self, params, hparams, **kwargs):
+        super().__init__(**kwargs)
+        self.num_mfccs = hparams['num_mfccs']
+
+    def call(self, log_mel_spectrograms):
+        return tf.signal.mfccs_from_log_mel_spectrograms(log_mel_spectrograms)[..., :self.num_mfccs]
+
+    def get_config(self):
+        config = super().get_config().copy()
+        config.update({
+            'num_mfccs': self.num_mfccs
+        })
+        return config
+
+
+class FrequencyMask(tf.keras.layers.Layer):
+    def __init__(self, params, hparams, **kwargs):
+        super().__init__(**kwargs)
+        self.max_freq_mask = hparams['max_freq_mask']
+
+    def call(self, spectrogram):
+        return tfex.audio.freq_mask(spectrogram, param=10)
+
+    def get_config(self):
+        config = super().get_config().copy()
+        config.update({
+            'max_freq_mask': self.max_freq_mask
+        })
+        return config
+
+
+class TimeMask(tf.keras.layers.Layer):
+    def __init__(self, params, hparams, **kwargs):
+        super().__init__(**kwargs)
+        self.max_time_mask = hparams['max_time_mask']
+
+    def call(self, spectrogram):
+        return tfex.audio.time_mask(spectrogram, param=10)
+
+    def get_config(self):
+        config = super().get_config().copy()
+        config.update({
+            'max_time_mask': self.max_time_mask
+        })
+        return config
