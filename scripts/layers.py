@@ -1,4 +1,5 @@
 import tensorflow as tf
+from tensorflow_io import experimental as tfex
 
 class LMS(tf.keras.layers.Layer):
     def __init__(self, params, hparams, **kwargs):
@@ -140,7 +141,7 @@ class DbMelSpectrogram(tf.keras.layers.Layer):
         super().__init__(**kwargs)
 
     def call(self, mel_spectrograms):
-        return tfio.experimental.audio.dbscale(mel_spectrograms, 80)
+        return tfex.audio.dbscale(mel_spectrograms, 80)
 
     def get_config(self):
         return super().get_config().copy()
@@ -162,33 +163,43 @@ class MFCC(tf.keras.layers.Layer):
         return config
 
 
-class FrequencyMask(tf.keras.layers.Layer):
-    def __init__(self, params, hparams, **kwargs):
-        super().__init__(**kwargs)
-        self.max_freq_mask = hparams['max_freq_mask']
-
-    def call(self, spectrogram):
-        return tfex.audio.freq_mask(spectrogram, param=10)
-
-    def get_config(self):
-        config = super().get_config().copy()
-        config.update({
-            'max_freq_mask': self.max_freq_mask
-        })
-        return config
-
-
 class TimeMask(tf.keras.layers.Layer):
     def __init__(self, params, hparams, **kwargs):
         super().__init__(**kwargs)
-        self.max_time_mask = hparams['max_time_mask']
+        self.max_mask_size = hparams['max_time_mask']
 
     def call(self, spectrogram):
-        return tfex.audio.time_mask(spectrogram, param=10)
+        time_max = tf.shape(spectrogram)[1]
+        t = tf.random.uniform(shape=(), minval=0, maxval=self.max_mask_size, dtype=tf.dtypes.int32)
+        t0 = tf.random.uniform(shape=(), minval=0, maxval=time_max - t, dtype=tf.dtypes.int32)
+        indices = tf.reshape(tf.range(time_max), (1, -1, 1))
+        condition = tf.math.logical_and(tf.math.greater_equal(indices, t0), tf.math.less(indices, t0 + t))
+        return tf.where(condition, 0, spectrogram)
 
     def get_config(self):
         config = super().get_config().copy()
         config.update({
             'max_time_mask': self.max_time_mask
+        })
+        return config
+
+
+class FrequencyMask(tf.keras.layers.Layer):
+    def __init__(self, params, hparams, **kwargs):
+        super().__init__(**kwargs)
+        self.max_mask_size = hparams['max_freq_mask']
+
+    def call(self, spectrogram):
+        freq_max = tf.shape(spectrogram)[2]
+        f = tf.random.uniform(shape=(), minval=0, maxval=self.max_mask_size, dtype=tf.dtypes.int32)
+        f0 = tf.random.uniform(shape=(), minval=0, maxval=freq_max - f, dtype=tf.dtypes.int32)
+        indices = tf.reshape(tf.range(freq_max), (1, 1, -1))
+        condition = tf.math.logical_and(tf.math.greater_equal(indices, f0), tf.math.less(indices, f0 + f))
+        return tf.where(condition, 0, spectrogram)
+
+    def get_config(self):
+        config = super().get_config().copy()
+        config.update({
+            'max_freq_mask': self.max_freq_mask
         })
         return config
