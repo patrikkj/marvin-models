@@ -114,7 +114,11 @@ class TimeMask(tf.keras.layers.Layer):
         all_params = {**params , **hparams}
         self.max_mask_size = all_params['max_time_mask']
 
-    def call(self, spectrogram):
+    def call(self, spectrogram, training=None):
+        # Apply data augmentation to training phase only
+        if not training:
+            return spectrogram
+
         time_max = tf.shape(spectrogram)[1]
         t = tf.random.uniform(shape=(), minval=0, maxval=self.max_mask_size, dtype=tf.dtypes.int32)
         t0 = tf.random.uniform(shape=(), minval=0, maxval=time_max - t, dtype=tf.dtypes.int32)
@@ -137,6 +141,10 @@ class FrequencyMask(tf.keras.layers.Layer):
         self.max_mask_size = all_params['max_freq_mask']
 
     def call(self, spectrogram):
+        # Apply data augmentation to training phase only
+        if not training:
+            return spectrogram
+
         freq_max = tf.shape(spectrogram)[2]
         f = tf.random.uniform(shape=(), minval=0, maxval=self.max_mask_size, dtype=tf.dtypes.int32)
         f0 = tf.random.uniform(shape=(), minval=0, maxval=freq_max - f, dtype=tf.dtypes.int32)
