@@ -28,8 +28,8 @@ var record = time => new Promise(async resolve => {
 """
 
 def record(duration=3):
-  display.display(display.Javascript(RECORD))
   print("recording ... ", end = " ")
+  display.display(display.Javascript(RECORD))
   s = output.eval_js(f'record({duration*1000})')
   print("  finished!")
   b = b64decode(s.split(',')[1])
