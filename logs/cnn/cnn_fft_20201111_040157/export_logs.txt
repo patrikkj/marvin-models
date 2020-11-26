@@ -1,0 +1,303 @@
+ 1/26 [>.............................] - ETA: 0s - loss: 0.3400 - precision: 1.0000 - recall: 0.9062 - accuracy: 0.9062 4/26 [===>..........................] - ETA: 0s - loss: 0.1383 - precision: 0.9969 - recall: 0.9083 - accuracy: 0.9678 7/26 [=======>......................] - ETA: 0s - loss: 0.0808 - precision: 0.9969 - recall: 0.9083 - accuracy: 0.981610/26 [==========>...................] - ETA: 0s - loss: 0.0605 - precision: 0.9875 - recall: 0.9083 - accuracy: 0.985913/26 [==============>...............] - ETA: 0s - loss: 0.0512 - precision: 0.9754 - recall: 0.9083 - accuracy: 0.988016/26 [=================>............] - ETA: 0s - loss: 0.0431 - precision: 0.9724 - recall: 0.9083 - accuracy: 0.990019/26 [====================>.........] - ETA: 0s - loss: 0.0379 - precision: 0.9606 - recall: 0.9083 - accuracy: 0.990722/26 [========================>.....] - ETA: 0s - loss: 0.0358 - precision: 0.9407 - recall: 0.9083 - accuracy: 0.990825/26 [===========================>..] - ETA: 0s - loss: 0.0321 - precision: 0.9407 - recall: 0.9083 - accuracy: 0.991926/26 [==============================] - 0s 18ms/step - loss: 0.0310 - precision: 0.9407 - recall: 0.9083 - accuracy: 0.9922
+ 1/26 [>.............................] - ETA: 0s - loss: 0.5192 - precision: 1.0000 - recall: 0.8945 - accuracy: 0.8945 4/26 [===>..........................] - ETA: 0s - loss: 0.1759 - precision: 0.9936 - recall: 0.8911 - accuracy: 0.9609 7/26 [=======>......................] - ETA: 0s - loss: 0.1065 - precision: 0.9780 - recall: 0.8911 - accuracy: 0.974910/26 [==========>...................] - ETA: 0s - loss: 0.0800 - precision: 0.9688 - recall: 0.8911 - accuracy: 0.981213/26 [==============>...............] - ETA: 0s - loss: 0.0636 - precision: 0.9658 - recall: 0.8911 - accuracy: 0.985316/26 [=================>............] - ETA: 0s - loss: 0.0565 - precision: 0.9453 - recall: 0.8911 - accuracy: 0.986319/26 [====================>.........] - ETA: 0s - loss: 0.0490 - precision: 0.9367 - recall: 0.8911 - accuracy: 0.987922/26 [========================>.....] - ETA: 0s - loss: 0.0435 - precision: 0.9339 - recall: 0.8911 - accuracy: 0.989325/26 [===========================>..] - ETA: 0s - loss: 0.0392 - precision: 0.9284 - recall: 0.8911 - accuracy: 0.990326/26 [==============================] - 0s 18ms/step - loss: 0.0380 - precision: 0.9256 - recall: 0.8911 - accuracy: 0.9905
+2020-11-11 04:04:53.699936: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:55.828076: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:57.114349: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-11-11 04:04:57.118080: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.118464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:04:57.118499: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:57.120304: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:04:57.121908: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:04:57.122224: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:04:57.124000: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:04:57.125139: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:04:57.129131: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:04:57.129234: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.129627: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.129977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:04:57.134951: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2200000000 Hz
+2020-11-11 04:04:57.135121: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x142aa00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:04:57.135150: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-11 04:04:57.220607: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.221159: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x142af40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:04:57.221197: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-11-11 04:04:57.221387: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.221795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:04:57.221847: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:57.221890: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:04:57.221916: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:04:57.221942: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:04:57.221963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:04:57.221984: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:04:57.222006: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:04:57.222086: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.222489: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.222853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:04:57.222946: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:57.819584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:04:57.819655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:04:57.819684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:04:57.819880: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.820491: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:57.820907: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-11-11 04:04:57.820961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:04:58.612169: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.612566: I tensorflow/core/grappler/devices.cc:69] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2020-11-11 04:04:58.612656: I tensorflow/core/grappler/clusters/single_machine.cc:356] Starting new session
+2020-11-11 04:04:58.613103: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.613482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:04:58.613523: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:04:58.613554: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:04:58.613574: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:04:58.613593: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:04:58.613615: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:04:58.613632: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:04:58.613650: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:04:58.613724: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.614095: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.614426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:04:58.614461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:04:58.614473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:04:58.614482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:04:58.614555: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.614968: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:04:58.615310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:04:58.625199: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:04:58.625232: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: Graph size after: 210 nodes (192), 231 edges (213), time = 3.687ms.
+2020-11-11 04:04:58.625242: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: function_optimizer did nothing. time = 0.074ms.
+2020-11-11 04:04:58.782775: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:04:58.782809: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.012ms.
+2020-11-11 04:04:58.782821: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 168 nodes (-36), 194 edges (-36), time = 0.742ms.
+2020-11-11 04:04:58.782832: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 118 nodes (-50), 135 edges (-59), time = 4.451ms.
+2020-11-11 04:04:58.782843: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 118 nodes (0), 135 edges (0), time = 1.262ms.
+2020-11-11 04:04:58.782853: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 111 nodes (-7), 126 edges (-9), time = 0.595ms.
+2020-11-11 04:04:58.782864: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 111 nodes (0), 126 edges (0), time = 0.27ms.
+2020-11-11 04:04:58.782874: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 111 nodes (0), 126 edges (0), time = 1.55ms.
+2020-11-11 04:04:58.782884: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 1.134ms.
+2020-11-11 04:04:58.782895: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 0.514ms.
+2020-11-11 04:04:58.782905: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.047ms.
+2020-11-11 04:04:58.782915: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 111 nodes (0), 126 edges (0), time = 0.238ms.
+2020-11-11 04:04:58.782926: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 111 nodes (0), 126 edges (0), time = 1.34ms.
+2020-11-11 04:04:58.782936: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 1.137ms.
+2020-11-11 04:04:58.782946: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 0.547ms.
+2020-11-11 04:04:58.782956: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 111 nodes (0), 126 edges (0), time = 0.258ms.
+2020-11-11 04:04:58.782967: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 111 nodes (0), 126 edges (0), time = 1.28ms.
+2020-11-11 04:04:58.782977: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 1.154ms.
+2020-11-11 04:04:58.782987: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 111 nodes (0), 126 edges (0), time = 0.484ms.
+2020-11-11 04:04:58.795441: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:04:58.795480: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 103 nodes (-8), 118 edges (-8), time = 0.258ms.
+2020-11-11 04:04:58.795490: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 103 nodes (0), 118 edges (0), time = 1.398ms.
+2020-11-11 04:04:58.795501: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 103 nodes (0), 118 edges (0), time = 1.05ms.
+2020-11-11 04:04:58.795511: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 103 nodes (0), 118 edges (0), time = 0.485ms.
+2020-11-11 04:04:58.795522: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 103 nodes (0), 118 edges (0), time = 0.194ms.
+2020-11-11 04:04:58.795532: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 103 nodes (0), 118 edges (0), time = 1.162ms.
+2020-11-11 04:04:58.795543: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 103 nodes (0), 118 edges (0), time = 1.065ms.
+2020-11-11 04:04:58.795553: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 103 nodes (0), 118 edges (0), time = 0.501ms.
+Writing weight file /tmp/models/cnn_fft/cnn_fft_20201111_040157/model/tfjs_graph_model/model.json...
+2020-11-11 04:05:01.668664: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:03.923638: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:05.245691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-11-11 04:05:05.249258: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.249648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:05.249701: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:05.251255: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:05.252959: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:05.253256: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:05.254946: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:05.255799: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:05.259172: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:05.259274: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.259685: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.260056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:05.264988: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2200000000 Hz
+2020-11-11 04:05:05.265161: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1cd5800 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:05:05.265188: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-11 04:05:05.349495: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.350040: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1cd5640 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:05:05.350073: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-11-11 04:05:05.350248: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.350609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:05.350652: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:05.350705: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:05.350725: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:05.350744: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:05.350766: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:05.350783: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:05.350800: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:05.350867: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.351265: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.351591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:05.351641: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:05.937647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:05:05.937728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:05:05.937743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:05:05.937920: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.938345: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:05.938724: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-11-11 04:05:05.938765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:05:06.252627: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.253058: I tensorflow/core/grappler/devices.cc:69] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2020-11-11 04:05:06.253149: I tensorflow/core/grappler/clusters/single_machine.cc:356] Starting new session
+2020-11-11 04:05:06.253631: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.254035: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:06.254077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:06.254107: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:06.254127: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:06.254146: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:06.254163: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:06.254180: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:06.254198: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:06.254256: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.254633: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.254993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:06.255031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:05:06.255044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:05:06.255056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:05:06.255134: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.255515: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:06.255883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:05:06.263807: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:06.263835: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: Graph size after: 130 nodes (126), 150 edges (147), time = 2.267ms.
+2020-11-11 04:05:06.263844: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: function_optimizer did nothing. time = 0.04ms.
+2020-11-11 04:05:06.366341: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:06.366371: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.01ms.
+2020-11-11 04:05:06.366380: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 120 nodes (-4), 145 edges (-4), time = 0.609ms.
+2020-11-11 04:05:06.366391: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 80 nodes (-40), 97 edges (-48), time = 3.275ms.
+2020-11-11 04:05:06.366402: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 80 nodes (0), 97 edges (0), time = 0.877ms.
+2020-11-11 04:05:06.366412: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (-7), 88 edges (-9), time = 0.452ms.
+2020-11-11 04:05:06.366422: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 73 nodes (0), 88 edges (0), time = 0.19ms.
+2020-11-11 04:05:06.366433: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 73 nodes (0), 88 edges (0), time = 1.124ms.
+2020-11-11 04:05:06.366443: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.749ms.
+2020-11-11 04:05:06.366453: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.34ms.
+2020-11-11 04:05:06.366463: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.022ms.
+2020-11-11 04:05:06.366473: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 73 nodes (0), 88 edges (0), time = 0.173ms.
+2020-11-11 04:05:06.366484: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 73 nodes (0), 88 edges (0), time = 0.83ms.
+2020-11-11 04:05:06.366494: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.73ms.
+2020-11-11 04:05:06.366505: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.345ms.
+2020-11-11 04:05:06.366515: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 73 nodes (0), 88 edges (0), time = 0.175ms.
+2020-11-11 04:05:06.366525: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 73 nodes (0), 88 edges (0), time = 0.823ms.
+2020-11-11 04:05:06.366535: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.741ms.
+2020-11-11 04:05:06.366546: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.35ms.
+2020-11-11 04:05:06.374851: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:06.374880: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 73 nodes (0), 88 edges (0), time = 0.134ms.
+2020-11-11 04:05:06.374889: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 73 nodes (0), 88 edges (0), time = 1.07ms.
+2020-11-11 04:05:06.374900: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.721ms.
+2020-11-11 04:05:06.374910: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.368ms.
+2020-11-11 04:05:06.374920: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 73 nodes (0), 88 edges (0), time = 0.13ms.
+2020-11-11 04:05:06.374931: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 73 nodes (0), 88 edges (0), time = 0.891ms.
+2020-11-11 04:05:06.374941: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.764ms.
+2020-11-11 04:05:06.374952: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 73 nodes (0), 88 edges (0), time = 0.338ms.
+Writing weight file /tmp/models/cnn_fft/cnn_fft_20201111_040157/submodel_1/tfjs_graph_model/model.json...
+2020-11-11 04:05:09.061931: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:11.285219: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:12.591214: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-11-11 04:05:12.595919: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.596474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:12.596528: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:12.598290: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:12.599818: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:12.600132: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:12.601921: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:12.603033: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:12.606485: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:12.606591: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.607022: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.607363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:12.612292: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2200000000 Hz
+2020-11-11 04:05:12.612460: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x278c840 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:05:12.612488: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-11 04:05:12.696166: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.696659: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x278cbc0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-11 04:05:12.696701: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-11-11 04:05:12.696871: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.697247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:12.697290: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:12.697347: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:12.697374: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:12.697397: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:12.697416: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:12.697442: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:12.697462: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:12.697530: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.697972: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:12.698340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:12.698387: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:13.273664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:05:13.273738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:05:13.273752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:05:13.273935: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.274414: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.274906: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-11-11 04:05:13.274969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:05:13.586887: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.587273: I tensorflow/core/grappler/devices.cc:69] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+2020-11-11 04:05:13.587341: I tensorflow/core/grappler/clusters/single_machine.cc:356] Starting new session
+2020-11-11 04:05:13.587873: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.588245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-11-11 04:05:13.588289: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-11 04:05:13.588341: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-11-11 04:05:13.588364: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-11-11 04:05:13.588386: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-11-11 04:05:13.588404: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-11-11 04:05:13.588423: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-11-11 04:05:13.588444: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-11-11 04:05:13.588501: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.588917: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.589244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-11-11 04:05:13.589276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-11 04:05:13.589288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-11-11 04:05:13.589300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-11-11 04:05:13.589377: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.589783: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-11-11 04:05:13.590138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5982 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+2020-11-11 04:05:13.596100: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:13.596139: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: Graph size after: 85 nodes (68), 85 edges (68), time = 1.275ms.
+2020-11-11 04:05:13.596149: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   function_optimizer: function_optimizer did nothing. time = 0.027ms.
+2020-11-11 04:05:13.673269: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:13.673301: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.008ms.
+2020-11-11 04:05:13.673317: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 50 nodes (-35), 50 edges (-35), time = 0.341ms.
+2020-11-11 04:05:13.673329: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 40 nodes (-10), 39 edges (-11), time = 1.64ms.
+2020-11-11 04:05:13.673340: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.519ms.
+2020-11-11 04:05:13.673350: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.176ms.
+2020-11-11 04:05:13.673361: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 40 nodes (0), 39 edges (0), time = 0.097ms.
+2020-11-11 04:05:13.673371: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 40 nodes (0), 39 edges (0), time = 0.708ms.
+2020-11-11 04:05:13.673382: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.425ms.
+2020-11-11 04:05:13.673392: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.16ms.
+2020-11-11 04:05:13.673403: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   debug_stripper: debug_stripper did nothing. time = 0.013ms.
+2020-11-11 04:05:13.673413: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 40 nodes (0), 39 edges (0), time = 0.083ms.
+2020-11-11 04:05:13.673424: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 40 nodes (0), 39 edges (0), time = 0.515ms.
+2020-11-11 04:05:13.673434: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.414ms.
+2020-11-11 04:05:13.673444: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.181ms.
+2020-11-11 04:05:13.673454: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   model_pruner: Graph size after: 40 nodes (0), 39 edges (0), time = 0.094ms.
+2020-11-11 04:05:13.673464: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 40 nodes (0), 39 edges (0), time = 0.478ms.
+2020-11-11 04:05:13.673475: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.431ms.
+2020-11-11 04:05:13.673485: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 40 nodes (0), 39 edges (0), time = 0.164ms.
+2020-11-11 04:05:13.679480: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:816] Optimization results for grappler item: graph_to_optimize
+2020-11-11 04:05:13.679509: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 32 nodes (-8), 31 edges (-8), time = 0.173ms.
+2020-11-11 04:05:13.679520: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 32 nodes (0), 31 edges (0), time = 0.568ms.
+2020-11-11 04:05:13.679531: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 32 nodes (0), 31 edges (0), time = 0.417ms.
+2020-11-11 04:05:13.679543: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 32 nodes (0), 31 edges (0), time = 0.161ms.
+2020-11-11 04:05:13.679554: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   remapper: Graph size after: 32 nodes (0), 31 edges (0), time = 0.067ms.
+2020-11-11 04:05:13.679564: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   constant_folding: Graph size after: 32 nodes (0), 31 edges (0), time = 0.443ms.
+2020-11-11 04:05:13.679574: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   arithmetic_optimizer: Graph size after: 32 nodes (0), 31 edges (0), time = 0.426ms.
+2020-11-11 04:05:13.679585: I tensorflow/core/grappler/optimizers/meta_optimizer.cc:818]   dependency_optimizer: Graph size after: 32 nodes (0), 31 edges (0), time = 0.177ms.
+Writing weight file /tmp/models/cnn_fft/cnn_fft_20201111_040157/submodel_2/tfjs_graph_model/model.json...
+COMPRESSING (1/1)    from    /content/marvin-models/logs/cnn_fft/cnn_fft_20201111_040157    to    /tmp/models/cnn_fft/cnn_fft_20201111_040157/cnn_fft_20201111_040157.tar.gz
