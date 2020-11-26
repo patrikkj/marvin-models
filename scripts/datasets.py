@@ -40,7 +40,7 @@ def build_dataset(pos_data, pos_labels, neg_data, neg_labels, split):
     return (train_arrays, val_arrays, test_arrays), (train_size, val_size, test_size)
 
 
-def resample_dataset(arrays, batch_size, positive_weight=0.3): 
+def resample_dataset(arrays, batch_size, positive_weight=0.1): 
     # Unpack array reference
     train_arrays, val_arrays, test_arrays = arrays
     train_data, train_labels = train_arrays

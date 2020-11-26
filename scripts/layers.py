@@ -1,30 +1,4 @@
 import tensorflow as tf
-import tensorflow_io as tfio
-from tensorflow_io import experimental as tfex
-
-
-class Resample(tf.keras.layers.Layer):
-    def __init__(self, params, hparams, **kwargs):
-        super().__init__(**kwargs)
-        all_params = {**params , **hparams}
-        self.sample_rate = all_params['sample_rate']
-
-    def call(self, tensor):
-        if tensor.shape[1] == 16_000:
-            return tensor
-        tensor = tfio.audio.resample(tensor, tensor.shape[1], self.sample_rate)
-        tensor.set_shape([None, 16_000])
-        return tensor
-        
-    def calculate_output_shape(self, input_shape):
-        return (None, 16_000)
-
-    def get_config(self):
-        config = super().get_config().copy()
-        config.update({
-            'sample_rate': self.sample_rate
-        })
-        return config
 
 
 class Spectrogram(tf.keras.layers.Layer):
@@ -103,34 +77,6 @@ class LogMelSpectrogram(tf.keras.layers.Layer):
 
     def get_config(self):
         return super().get_config().copy()
-
-
-class DbMelSpectrogram(tf.keras.layers.Layer):
-    def __init__(self, params, hparams, **kwargs):
-        super().__init__(**kwargs)
-
-    def call(self, mel_spectrograms):
-        return tfex.audio.dbscale(mel_spectrograms, 80)
-
-    def get_config(self):
-        return super().get_config().copy()
-
-
-class MFCC(tf.keras.layers.Layer):
-    def __init__(self, params, hparams, **kwargs):
-        super().__init__(**kwargs)
-        all_params = {**params , **hparams}
-        self.num_mfccs = all_params['num_mfccs']
-
-    def call(self, log_mel_spectrograms):
-        return tf.signal.mfccs_from_log_mel_spectrograms(log_mel_spectrograms)[..., :self.num_mfccs]
-
-    def get_config(self):
-        config = super().get_config().copy()
-        config.update({
-            'num_mfccs': self.num_mfccs
-        })
-        return config
 
 
 class TimeMask(tf.keras.layers.Layer):
