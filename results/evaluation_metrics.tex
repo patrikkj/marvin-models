@@ -1,0 +1,22 @@
+\begin{table}[H]
+	\centering
+	\caption{Evaluation metrics for all three models.}
+    \begin{tabular}{ll|rRrr}
+        \toprule
+        \textbf{Split}                  & \textbf{Model}       & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{FPR} \\
+        \midrule
+        \multirow{3}{*}{\textbf{train}} & \textbf{rnn}         & 0.999699          & 1                  & 0.994275        & 0            \\
+                                        & \textbf{cnn}         & 0.999799          & 0.998092           & 0.998092        & 0.000106     \\
+                                        & \textbf{rnn\_naïve} & 0.998897          & 0.997093           & 0.981870        & 0.000159     \\
+        \midrule
+        \multirow{3}{*}{\textbf{val}}   & \textbf{rnn}         & 0.998496          & 1                  & 0.971347        & 0            \\
+                                        & \textbf{cnn}         & 0.996239          & 0.973684           & 0.954155        & 0.001429     \\
+                                        & \textbf{rnn\_naïve} & 0.991575          & 0.950769           & 0.885387        & 0.00254      \\
+        \midrule
+        \multirow{3}{*}{\textbf{test}}  & \textbf{rnn}         & 0.998044          & 1                  & 0.962751        & 0            \\
+                                        & \textbf{cnn}         & 0.996991          & 0.971347           & 0.971347        & 0.001588     \\
+                                        & \textbf{rnn\_naïve} & 0.992477          & 0.960000           & 0.893983        & 0.002064     \\
+        \bottomrule
+    \end{tabular}
+	\label{tab:results_evaluation_metrics}
+\end{table}

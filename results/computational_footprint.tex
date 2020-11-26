@@ -1,0 +1,15 @@
+\begin{table}[H]
+	\centering
+	\caption{Computational cost of the three models.}
+    \begin{tabular}{l|c|c|c|c}
+        \toprule
+        \multirow{2}{*}{\textbf{Model}} & Batch size: 1 & Batch size: 32 & Batch size: 256 & \multirow{2}{*}{Num. of parameters} \\
+                                        & t/s [ms]      & t/s [ms]       & t/ex [ms]       &                                     \\
+        \midrule
+        \textbf{Naïve RNN}             & 71.365        & 3.150          & 1.213           & 371 873                             \\
+        \textbf{CNN  }                  & 11.407        & 1.202          & 0.932           & 103 489                             \\
+        \textbf{RNN  }                  & 24.413        & 1.423          & 0.967           & 361 633                             \\
+        \bottomrule
+    \end{tabular}
+	\label{tab:results_computational_footprint}
+\end{table}
