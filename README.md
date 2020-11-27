@@ -5,6 +5,11 @@ This repository contains all relevant code and project files for the Marvin proj
 ![Imgur](https://i.imgur.com/moWF6OZ.png)
 
 
+
+Link to video [here](https://youtu.be/3YZf92uqG20?list=PLBPayIBBGNg9Rd0ENXhlUS_1vhBn3h4r2). <br/>
+Link to paper [here](https://github.com/patrikkj/marvin-models/blob/main/Trigger_word_detection_DNN.pdf).
+
+
 ----
 
 ## Jupyter Notebooks
